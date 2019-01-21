@@ -1,4 +1,4 @@
-$('#start').on('click', function () {
+$('.btn').on('click', function () {
     game.loadQuestion();
 })
 $(document).on('click', '.answer-button', function (e) {
@@ -12,34 +12,34 @@ var questions = [{
         question: "What is the capital of Tanzania?",
         answers: ["Dar Es Salaam", "Marrakech", "Cape Town", "Nairobi"],
         correctAnswer: "Dar Es Salaam",
-        image: ""
+        image: "<img src='tanzania.jpg'>"
     }, {
         question: "How do you say 'maybe' in French?",
         answers: ["oui", "non", "peut-etre"],
         correctAnswer: "peut-etre",
-        image: ""
+        image: "<img src='france1.jpg'>"
     },
     {
         question: "What is considered a French delicacy?",
         answers: ["duck", "foie gras", "champagne", "All 3 of these"],
         correctAnswer: "All 3 of these",
-        image: ""
+        image: "<img src='france2.jpg'>"
     }, {
         question: "What is the capital of Hungary?",
         answers: ["Budapest", "Vienna", "Moscow", "Dubrovnik"],
         correctAnswer: "Budapest",
-        image: ""
+        image: "<img src='hungary.jpg'>"
     },
     {
         question: "What is the capital of Norway?",
         answers: ["Dublin", "London", "Stockholm", "Oslo"],
         correctAnswer: "Oslo",
-        image: ""
+        image: "<img src='geiranger.jpg'>"
     }, {
         question: "What is a term in Irish for 'having fun?'",
         answers: ["stick in the mud", "jolly","good ol' craic", "drunk"],
         correctAnswer: "good ol' craic",
-        image: "",
+        image: "<img src='craic.jpg'>"
     }
 ]
 
@@ -136,6 +136,7 @@ var game = {
         clearInterval(timer);
         game.correct++;
         $('#subwrapper').html('<h2>You got it right!</h2>');
+        $('#subwrapper').append(questions[game.currentQuestion].image);
         if (game.currentQuestion == questions.length - 1) {
             setTimeout(game.results, 3 * 1000);
         } else {
