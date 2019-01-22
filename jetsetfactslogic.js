@@ -104,7 +104,7 @@ var game = {
         $('#subwrapper').html("<h2>All Done!</h2>");
         $('#subwrapper').append("<h3>Correct: " + game.correct + "</h3>");
         $('#subwrapper').append("<h3>Incorrect: " + game.incorrect + "</h3>");
-        $('#subwrapper'.append("<h3>Unanswered: " + game.unanswered + "</h3>"))
+        $('#subwrapper').append("<h3>Unanswered: " + game.unanswered + "</h3>")
         $('#subwrapper').append("<button id='reset'>RESET</button>");
     },
 
