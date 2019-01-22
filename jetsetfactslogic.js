@@ -10,8 +10,8 @@ $(document).on('click', '#reset', function () {
 
 var questions = [{
         question: "What is the capital of Tanzania?",
-        answers: ["Dar Es Salaam", "Marrakech", "Cape Town", "Nairobi"],
-        correctAnswer: "Dar Es Salaam",
+        answers: ["Dodoma", "Marrakech", "Cape Town", "Nairobi"],
+        correctAnswer: "Dodoma",
         image: "<img src='tanzania.jpg'>"
     }, {
         question: "How do you say 'maybe' in French?",
