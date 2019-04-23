@@ -1,5 +1,4 @@
 # jetsetfactsgame
-Jet Set Facts Trivia
 
 JetSetFacts Trivia Game
 
